@@ -1,0 +1,288 @@
+
+/* Main Styles ------------------------------------------------------*/
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  margin: 0 auto;
+  max-width: 1024px;
+  display: flex;
+  flex-direction: column;
+  font-family: 'Roboto', sans-serif;
+  color: black;
+  background-color: #e2e2e2;
+  text-align: center;
+}
+
+ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: white;
+}
+
+img {
+  max-width: 100%;
+  margin: auto;
+  display: block;
+}
+
+/* Navigation Styles -------------------------------------------------*/
+
+nav {
+  font-family: "Roboto", Arial, Verdana;
+  font-weight: 300;
+  letter-spacing: .05em;
+  background-color: #5fced6;
+  padding: 10px;
+}
+
+h1, h2, .top-nav {
+  text-align: center;
+}
+
+h2 {
+  margin-top: 20px;
+  color:#ffffff;
+  text-shadow: 2px 2px 4px #000;
+}
+
+.top-nav, .top-nav li {
+  width: 100%;
+}
+
+h1 a, .top-nav a {
+  color: #000;
+}
+
+.top-nav {
+  margin-top: 30px;
+}
+
+.top-nav li {
+  padding: 10px 0;
+  margin: 5px auto;
+  background-color: white;
+}
+
+.top-nav a {
+  text-transform: uppercase;
+}
+
+/* Profile Styles ----------------------------------------------------*/
+
+.profile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px 5px 20px;
+  padding: 0 10px;
+  gap: 20px;
+}
+
+.profile-picture {
+  max-width: 75%;
+  margin-bottom: 20px;
+ 
+}
+/* Portfolio Styles ----------------------------------------------------*/
+
+h3 {
+  margin: 10px 0 5px;
+  font-family: 'Fredoka', sans-serif;
+  color:#23917e; 
+}
+.container {
+  max-width: 1100px;
+  /* padding: 10px; */
+  margin: 0 auto;
+  font-family: 'Roboto', sans-serif;
+}
+
+.col {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 10px;
+  padding: 10px 10px;
+  min-height: 250px;
+  color: rgb(126, 126, 126);
+  text-align: center;
+  letter-spacing: 1px;
+}
+
+.box-1 {
+  background-color: #dadada;
+}
+
+.box-2 {
+  background-color: #dadada;
+}
+
+.box-3 {
+  background-color: #dadada;
+}
+
+.box-4 {
+  background-color: #dadada;
+}
+
+.box-5 {
+  background-color: #dadada;
+ 
+}
+
+.box-6 {
+  background-color: #dadada;
+  
+}
+
+/* Skills Styles ----------------------------------------------------------*/
+
+.box-7 {
+  background-color: #71e6d2;
+}
+
+.box-8 {
+  background-color: #ffffff;
+}
+
+.box-9 {
+  background-color: #7cf3c1;
+}
+
+.box-10 {
+  background-color: #ffffff;
+}
+
+.box-11 {
+  background-color: #ec9765;
+}
+
+.box-12 {
+  background-color: #ff8993;
+}
+
+.logo {
+  max-width: 50%;
+}
+
+/* Contact Styles ----------------------------------------------------------*/
+
+#contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  margin: 20px 10px;
+  padding-bottom: 20px;
+  background-color: #dadada;
+}
+
+/* Footer Styles -----------------------------------------------------------*/
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin: 20px 10px;
+  padding: 0px 10px 20px;
+  background-color: #dadada;
+}
+
+.footer-nav li  {
+  display: none;
+}
+
+/* Media Queries 768px  ----------------------------------------------------*/
+
+@media only screen and (min-width: 768px) {
+
+.top-nav{
+margin-top: 0;
+}
+
+.top-nav li {
+display: inline-block;
+width: auto;
+margin-right: 15px;
+background-color: transparent;
+}
+
+.top-nav li:last-child {
+margin-right: 0;
+}
+        
+ .top-nav a {
+color: rgb(0, 0, 0);
+}
+
+.profile {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  
+} 
+
+.col {
+  display:flex;
+  flex-direction: column;
+  flex-basis: calc(50% - 20px); 
+  align-items: center;
+}
+
+.footer-nav li {
+display: inline-block;
+width: auto;
+margin-right: 15px;
+background-color: transparent;
+}
+         
+.back {
+  display: none;
+}
+
+}
+
+/* Media Queries 1024px ----------------------------------------------------*/
+  
+@media only screen and (min-width: 1024px) {
+
+nav {
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
+
+.top-nav, .top-nav li {
+width: initial;
+margin-bottom: 0;
+}
+
+.col {
+flex-basis: calc(33.333% - 20px);
+}
+
+}
+
+
+
+
